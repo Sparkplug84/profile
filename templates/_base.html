@@ -28,38 +28,50 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#">Mark McClean</a>
+        <nav class="navbar navbar-expand-lg mt-3">
+            <a class="navbar-brand white-text ml-2" href="#">Mark McClean</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div id="nav-icon1">
+                <div id="nav-icon">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-0 ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                <ul class="navbar-nav mr-1 ml-auto">
+                    <li class="nav-item active my-auto">
+                        <a class="nav-link white-text text-uppercase mr-2 underline active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link white-text text-uppercase mr-2 underline" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link white-text text-uppercase mr-2 underline" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link white-text mr-4 text-uppercase underline" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link white-text mr-2" href="#"><i class="fab fa-2x fa-linkedin social-hover"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link white-text mr-2" href="#"><i class="fab fa-2x fa-github social-hover"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link white-text mr-2" href="#"><i class="fab fa-2x fa-facebook social-hover"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link white-text mr-2" href="#"><i class="fab fa-2x fa-twitter social-hover"></i></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="container">
+    <!-- <div class="container"> -->
         {% block body %}{% endblock %}
-    </div>
+    <!-- </div> -->
 
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
