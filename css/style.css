@@ -8,6 +8,12 @@ body {
 
 nav {
     z-index: 1;
+    top: -100px;
+    transition: top 2s ease;
+}
+
+nav.show {
+    top: 0;
 }
 
 .container {
@@ -162,7 +168,32 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: height 0.2s linear; 
+    transition: height 0.2s linear;
+    filter: blur(0px);
+}
+
+.callout {
+    z-index: -100;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.callout.show {
+    opacity: 1;
+    z-index: 1;
+}
+
+.loading-text {
+    z-index: 2;
+    position: absolute;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width: fit-content;
+    height: 50px;
 }
 
 img {
@@ -197,6 +228,7 @@ img {
     border-radius: 50%;
     transform: translateX(-400%);
     transition: transform 0.5s ease;
+    box-shadow: 3px 3px 12px #33393f;
 }
 
 .profile-photo.show {
