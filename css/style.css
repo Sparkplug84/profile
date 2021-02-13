@@ -13,7 +13,7 @@ nav {
 }
 
 nav.show {
-    top: 0;
+    top: -15px;
 }
 
 .container {
@@ -233,4 +233,27 @@ img {
 
 .profile-photo.show {
     transform: translateX(0);
+}
+
+/* ---------------------- Projects page */
+
+.projects-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    height: 600px;
+    width: 100%;
+    background: black;
+    overflow-x: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://sedra.devradius.com/wp-content/uploads/2018/11/project-discovery.jpg") center;
+    background: linear-gradient(rgba(162, 8, 22, 0.8), rgba(150, 8, 160, 0.8)), url("https://sedra.devradius.com/wp-content/uploads/2018/11/project-discovery.jpg") center; /* The least supported option. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: height 0.2s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

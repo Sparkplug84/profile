@@ -2,28 +2,28 @@
 <html lang="en">
 
 <head>
-    {% block meta %}
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
-    {% endblock %}
+    
 
-    {% block corecss %}
+    
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    {% endblock %}
+    
 
-    {% block extra_css %}{% endblock %}
+    
 
-    {% block header_js %}{% endblock %}
+    
 
     <!-- A link to render the site icon in the browser tab -->
     <link rel="shortcut icon" type="image/png" href="" />
 
-    <title>Mark McClean | {% block title %}{% endblock %}</title>
+    <title>Mark McClean | Projects</title>
 </head>
 
 <body>
@@ -70,13 +70,40 @@
     </header>
 
     <!-- <div class="container"> -->
-        {% block body %}{% endblock %}
+        
+<section class="projects-header">
+    <div class="text-center">
+        <h1 class="white-text text-uppercase">My Projects</h1>
+    </div>
+</section>
+
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-5 text-center mb-5">
+                <img class="profile-photo" src="media/ProfilePic.png" alt="Profile Picture">
+            </div>
+            <div class="col-12 col-md-7 px-5">
+                <h2 class="">A quick introduction</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae mollitia, pariatur obcaecati
+                    ullam maxime molestias dicta odio asperiores rem odit doloribus ad eaque et a sapiente delectus
+                    labore deleniti iusto tenetur blanditiis doloremque. Laudantium aliquid fugiat quibusdam atque velit
+                    dolores labore voluptate magnam! Nam repellat officia illum, corporis ducimus est quibusdam sunt
+                    impedit nesciunt. Quos qui laudantium ipsa assumenda accusantium odit vel sint porro delectus, est
+                    iusto quod unde repellat ratione dignissimos? Voluptatibus odit provident sequi, commodi ad itaque,
+                    exercitationem debitis soluta perspiciatis aut voluptate reprehenderit asperiores quaerat! Provident
+                    assumenda iste distinctio ea modi? Exercitationem quas tempora animi quasi harum?</p>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- </div> -->
 
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
-    {% block footer_js %}{% endblock %}
+    
 </body>
 
 </html>

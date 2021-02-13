@@ -27,7 +27,7 @@ const callout = document.querySelector('.callout')
 const navbar = document.querySelector('.navbar')
 
 let load = 0
-let int = setInterval(blurring, 30)
+let int = setInterval(blurring, 40)
 
 function blurring() {
     load++
@@ -35,7 +35,9 @@ function blurring() {
     if (load > 99) {
         clearInterval(int)
         navbar.classList.add('show')
-        callout.classList.add('show')
+        setTimeout(function(){
+            callout.classList.add('show')
+        }, 1000);
     }
     loadText.innerHTML = `Profile loading...${load}%`
     loadText.style.opacity = scale(load, 0, 100, 1, 0)
