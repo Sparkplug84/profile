@@ -28,7 +28,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg mt-3 w-100 position-absolute">
+        <nav class="navbar navbar-expand-lg mt-3 w-100 position-absolute" id="navbar">
             <a class="navbar-brand white-text ml-2" href="#">Mark McClean</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-1 ml-auto">
                     <li class="nav-item active my-auto">
-                        <a class="nav-link white-text text-lowercase mr-2 underline active" href="index.html">Home</a>
+                        <a class="nav-link white-text text-lowercase mr-2 underline" href="index.html">Home</a>
                     </li>
                     <li class="nav-item my-auto">
                         <a class="nav-link white-text text-lowercase mr-2 underline" href="#">About Me</a>
@@ -80,19 +80,17 @@
 <section>
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12 col-md-5 text-center mb-5">
-                <img class="profile-photo" src="media/ProfilePic.png" alt="Profile Picture">
+            <div class="col-12 col-md-4 text-center mb-5">
+                <div class="card">
+                    <img src="media/RouteShare.png" class="card-img-top" alt="Route Share Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Route Share</h5>
+                        <a href="https://bicycle-route-share.herokuapp.com/" class="btn btn-primary stretched-link" target="_blank">Go to website</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-7 px-5">
-                <h2 class="">A quick introduction</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae mollitia, pariatur obcaecati
-                    ullam maxime molestias dicta odio asperiores rem odit doloribus ad eaque et a sapiente delectus
-                    labore deleniti iusto tenetur blanditiis doloremque. Laudantium aliquid fugiat quibusdam atque velit
-                    dolores labore voluptate magnam! Nam repellat officia illum, corporis ducimus est quibusdam sunt
-                    impedit nesciunt. Quos qui laudantium ipsa assumenda accusantium odit vel sint porro delectus, est
-                    iusto quod unde repellat ratione dignissimos? Voluptatibus odit provident sequi, commodi ad itaque,
-                    exercitationem debitis soluta perspiciatis aut voluptate reprehenderit asperiores quaerat! Provident
-                    assumenda iste distinctio ea modi? Exercitationem quas tempora animi quasi harum?</p>
+            <div class="col-12 col-md-8 px-5">
+
             </div>
         </div>
     </div>
@@ -100,6 +98,7 @@
 
     <!-- </div> -->
 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
